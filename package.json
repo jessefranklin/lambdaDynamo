@@ -1,0 +1,39 @@
+{
+  "name": "contacts-api",
+  "version": "1.0.0",
+  "description": "Contacts API",
+  "private": true,
+  "author": "Jesse Frankling",
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "aws",
+    "lamdas",
+    "serverless",
+    "dynamodb",
+    "jest",
+    "es6",
+    "docker"
+  ],
+  "scripts": {
+    "sls": "serverless",
+    "seed": "node ./seed/runner.js",
+    "start": "sls offline start",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "deploy": "serverless deploy --aws-profile serverless",
+    "package": "serverless package"
+  },
+  "engines": {
+    "node": "~10.16.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.573.0",
+    "jest": "^24.9.0",
+    "serverless": "^1.57.0",
+    "serverless-offline": "^5.12.0"
+  }
+}
